@@ -13,6 +13,7 @@ public class UserController {
 
 
     @GetMapping
+//    @PreAuthorize("isAuthenticated()")
     Map<String, String> hello() {
         return Map.of("message", "Hello from Gateway");
     }

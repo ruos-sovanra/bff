@@ -28,10 +28,6 @@ spring:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin Access-Control-Request-Headers
         - SaveSession
       routes:
-        - id: webapp-bff
-          uri: http://localhost:3000
-          predicates:
-            - Path=/**
         - id: identity
           uri: lb://identity
           predicates:
@@ -39,6 +35,11 @@ spring:
           filters:
             - TokenRelay=
             - RewritePath=/oauth2/(?<segment>.*),/$\{segment}
+        - id: webapp-bff
+          uri: http://localhost:3001
+          predicates:
+            - Path=/**
+
 server:
   port: 8081
 management:
