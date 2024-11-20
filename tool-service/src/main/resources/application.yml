@@ -1,0 +1,22 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: tool-service
+
+  #  profiles:
+  #    active: dev
+
+  config:
+    import: "optional:configserver:"
+
+  cloud:
+    config:
+      uri: http://localhost:9090
+      name: tool-service
+
+gitlab:
+  base-url: https://git.shinoshike.studio/api/v4
+  personal-access-token: glpat-xBEAzy-73hWdWatMxCqd
+

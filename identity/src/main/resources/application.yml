@@ -7,10 +7,21 @@ spring:
     password: ITE2@2024
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "vannraruos@gmail.com"
+    password: "klmcbchpzqszhlhz"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
   security:
     oauth2:
       resourceserver:

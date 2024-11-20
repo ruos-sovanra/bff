@@ -66,13 +66,9 @@ public class Init {
             adminUser.setUsername("admin");
             adminUser.setEmail("admin@devops.com");
             adminUser.setPassword(passwordEncoder.encode("Qwerty@2024"));
-            adminUser.setFamilyName("Ruos");
-            adminUser.setGivenName("Sovanra");
+
             adminUser.setProfileImage("avatar.png");
-            adminUser.setCoverImage("cover.png");
-            adminUser.setDob(LocalDate.now());
-            adminUser.setGender("Male");
-            adminUser.setPhoneNumber("016318810");
+
             adminUser.setEmailVerified(true);
             adminUser.setIsEnabled(true);
             adminUser.setCredentialsNonExpired(true);
@@ -140,7 +136,7 @@ public class Init {
                 .tokenSettings(tokenSettings)
                 .build();
 
-        RegisteredClient registeredClient = jpaRegisteredClientRepository.findByClientId("yelp");
+        RegisteredClient registeredClient = jpaRegisteredClientRepository.findByClientId("devops");
 
         if (registeredClient == null) {
             jpaRegisteredClientRepository.save(web);

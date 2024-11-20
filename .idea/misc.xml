@@ -4,8 +4,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/gateway" />
     <file type="web" url="file://$PROJECT_DIR$/identity" />
+    <file type="web" url="file://$PROJECT_DIR$/notification" />
+    <file type="web" url="file://$PROJECT_DIR$/tool-service" />
+    <file type="web" url="file://$PROJECT_DIR$/userserver" />
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

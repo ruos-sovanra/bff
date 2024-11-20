@@ -1,0 +1,34 @@
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: userserver
+
+#  profiles:
+#    active: dev
+
+  config:
+    import: "optional:configserver:"
+
+  cloud:
+    config:
+      uri: http://localhost:9090
+      name: userserver
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8083/eureka
+#  instance:
+#    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${random.value}
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#
+#
+#

@@ -62,13 +62,8 @@ public class CustomUserDetailsDeserializer extends JsonDeserializer<CustomUserDe
         user.setUserAuthorities(userAuthorities);
         user.setEmail(email);
         user.setPassword(password);
-        user.setFamilyName(familyName);
-        user.setGivenName(givenName);
         user.setProfileImage(profileImage);
         log.info("DOB: {}", dob);
-        user.setDob(LocalDate.now());
-        user.setGender(gender);
-        user.setPhoneNumber(phoneNumber);
         user.setEmailVerified(emailVerified);
         user.setIsEnabled(isEnabled);
         user.setCredentialsNonExpired(credentialsNonExpired);

@@ -130,9 +130,7 @@ public class SecurityConfig {
                         .id(authentication.getName())
                         .subject(authentication.getName())
                         .claim("scope", scopes)
-                        .claim("uuid", customUserDetails.getUser().getUuid())
-                        .claim("userFullName", String.format("%s %s", customUserDetails.getUser().getFamilyName(),
-                                customUserDetails.getUser().getGivenName()));
+                        .claim("uuid", customUserDetails.getUser().getUuid());
             }
         };
     }

@@ -4,6 +4,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/config-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/eureka" />
         <option name="gradleJvm" value="17" />
         <option name="modules">
@@ -27,6 +35,30 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/identity" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notification" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/notification" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tool-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/tool-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userserver" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/userserver" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -32,39 +32,11 @@ public class User extends Auditable<String> {
     @Column(nullable = false, length = 256)
     private String password;
 
-    @Column(unique = true, length = 64)
-    private String facebookId;
 
-    @Column(unique = true, length = 64)
-    private String googleId;
-
-    @Column(unique = true, length = 64)
-    private String xId;
-
-    @Column(unique = true, length = 64)
-    private String telegramId;
-
-    @Column(unique = true, length = 64)
-    private String appleId;
-
-    @Column(nullable = false, columnDefinition = "Text")
-    private String familyName;
-
-    @Column(nullable = false, columnDefinition = "Text")
-    private String givenName;
-
-    @Column(unique = true)
-    private String phoneNumber;
-
-    private String gender;
-
-    private LocalDate dob;
 
     @Column(length = 256)
     private String profileImage;
 
-    @Column(length = 256)
-    private String coverImage;
 
     @Column(length = 256)
     private String ipAddress;
